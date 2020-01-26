@@ -53,9 +53,6 @@ echo "[STEP 8] Installing k9s"
   mv k9s /usr/local/bin/
 )
 
-echo "[STEP 9] Setting Root Password"
-echo "kubeadmin" | passwd --stdin root >/dev/null 2>&1
-
 #######################################
 # To be executed only on master nodes #
 #######################################
@@ -87,7 +84,7 @@ then
   # Generate Cluster join command
   echo "[STEP 12] Generate and save cluster join command to /joincluster.sh"
   joinCommand=$(kubeadm token create --print-join-command 2>/dev/null)
-  echo "$joinCommand --ignore-preflight-errors=all" > /joincluster.sh
+  echo "$joinCommand --ignore-preflight-errors=all" > /root/joincluster.sh
 
 fi
 

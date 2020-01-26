@@ -88,9 +88,9 @@ then
 
 fi
 
-#######################################
-# TODO: Figure out how to transfer joincommand
-# file to worker node and execute joing command
-# To be executed only on worker nodes #
-#######################################
+#################################################
+# TODO: Figure out how to transfer joincommand  #
+# file to worker node and execute joing command #
+# To be executed only on worker nodes           #
+#################################################
 

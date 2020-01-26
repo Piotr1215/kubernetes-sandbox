@@ -57,7 +57,7 @@ echo "[STEP 8] Installing k9s"
 # To be executed only on master nodes #
 #######################################
 
-if [[ $(hostname) =~ .*master.* ]]
+if [[ $(hostname) =~ *master* ]]
 then
 
   # Initialize Kubernetes
